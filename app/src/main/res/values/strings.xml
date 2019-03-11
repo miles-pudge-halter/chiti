@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Chiti</string>
+
+    <string name="com_auth0_client_id">bCd5dKBuNj65maQ6ujiTCn1ByFXvUgol</string>
+    <string name="com_auth0_domain">penicillin.auth0.com</string>
+
+    <string name="facebook_app_id">675137889567877</string>
+    <string name="fb_login_protocol_scheme">fb675137889567877</string>
+
+
+    <string name="message_daily_limit">Group must have a minimum of 7 members and a
+        maximum of 30 members.
+    </string>
+    <string name="message_weekly_limit">Group must have a minimum of 7 members and a
+        maximum of 16 members.
+    </string>
+    <string name="message_monthly_limit">Group must have a minimum of 7 members and a
+        maximum of 12 members.
+    </string>
+
+    <string name="message_interest_rate">
+        Interest rate is -6%, -5%, -3%, -2% for the first four and 2%, 4% 5% for the last three.
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

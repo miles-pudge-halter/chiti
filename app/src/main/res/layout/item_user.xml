@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+            android:id="@+id/icon_holder"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        <ImageView
+                android:id="@+id/user_image"
+                tools:src="@drawable/user_mark"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/icon_holder"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/user_name"
+                tools:text="Annt Phyo Thwin"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorLightBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/user_phone"
+                tools:text="+959 783208894"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

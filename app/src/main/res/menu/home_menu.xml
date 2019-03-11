@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/action_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            app:showAsAction="always"
+            android:title="Update Profile"/>
+
+    <item
+            android:id="@+id/action_transactions"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            app:showAsAction="always"
+            android:title="Transactions"/>
+    <item
+            android:id="@+id/action_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            app:showAsAction="always"
+            android:title="Logout"/>
+</menu>

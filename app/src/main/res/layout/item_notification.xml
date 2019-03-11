@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+            android:id="@+id/icon_holder"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        <ImageView
+                android:padding="8dp"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_mail_black_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+            android:id="@+id/message_layout"
+            android:layout_toEndOf="@id/icon_holder"
+            android:layout_marginStart="4dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/noti_title"
+                    tools:text="New Transaction"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorLightBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/transaction_amount"
+                    tools:text="+50000"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorCashGreen"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/noti_body"
+                tools:text="You have been debited 5000 Kyats from Group ABC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+            android:id="@+id/noti_time"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/message_layout"
+            tools:text="10 minutes ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>
